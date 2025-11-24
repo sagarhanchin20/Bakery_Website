@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BakeHub - My Orders</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="order.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">BAKE<span class="hub-text">Hub</span></div>
+        <nav>
+            <ul>
+                <li><a href="_Home.html">Home</a></li>
+                <li><a href="Order.html" class="active">Order</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="Profile.html" class="my-account-btn">
+            <span class="account-icon"></span> My Account
+        </a>
+    </header>
+
+    <main>
+        <div class="orders-container">
+            <h2>My Order History</h2>
+            
+            <table id="orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Items Ordered</th>
+                        <th>Total Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="orders-body">
+                    </tbody>
+            </table>
+            
+            <p id="no-orders-message" style="display:none; text-align:center;">
+                You haven't placed any orders yet.
+            </p>
+        </div>
+    </main>
+    <script src="order.js"></script>
+</body>
+</html>

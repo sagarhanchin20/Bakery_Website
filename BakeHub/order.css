@@ -1,0 +1,40 @@
+.orders-container {
+    padding: 50px 5%;
+    min-height: 60vh;
+}
+
+.orders-container h2 {
+    font-family: "Newsreader", serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: white;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #af4c0f;
+    color: white;
+    font-size: 18px;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.order-id {
+    font-weight: bold;
+    color: #af4c0f;
+}
