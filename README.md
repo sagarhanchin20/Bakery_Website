@@ -16,7 +16,6 @@ This project was built as a part of my Web Technology Lab project using HTML, CS
 * **Cart:** Add items, remove items, and view live total calculations.
 * **Order Placement:** Seamless checkout process that saves orders to the database.
 * **Order History:** Users can view a list of their past orders with dates and total amounts.
-  
 
 ## 🛠️ Tech Stack
 * **Frontend:** HTML, CSS, JavaScript
@@ -31,3 +30,32 @@ This project was built as a part of my Web Technology Lab project using HTML, CS
 * Create a new database named bakehub
 * Create table customer and order (SQL query has been provided in text file)
 * **Run the project:** Open XAMPP control anel and start start Aache and MySQL, click on admin to go to your directory, and open Login.html
+
+## 📸 Screenhots
+**Signin Page**
+
+<img src="Images/Signup Page.jpeg">
+
+**Login Page**
+
+<img src="Images/Login Page.jpeg">
+
+**Home Page**
+
+<img src="Images/Home Page.jpeg">
+
+**Cart**
+
+<img src="Images/Cart.jpeg">
+
+**Order Successful Popup**
+
+<img src="Images/Order Successful Pop up.jpeg">
+
+**Order Page**
+
+<img src="Images/Order History.jpeg">
+
+**Profile Page**
+
+<img src="Images/Profile Page.jpeg">
