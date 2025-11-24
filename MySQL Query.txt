@@ -1,0 +1,21 @@
+MySQL
+Customer Table
+CREATE TABLE customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) DEFAULT NULL,
+    gender VARCHAR(20) DEFAULT NULL,
+    birthday DATE DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Order Table
+CREATE TABLE orders (
+    order_id INT(4) UNSIGNED ZEROFILL AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT NOT NULL,
+    items TEXT NOT NULL,
+    total_amount DECIMAL(10,2) NOT NULL,
+    order_date DATETIME DEFAULT CURRENT_TIMESTAMP
+);

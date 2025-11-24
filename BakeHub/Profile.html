@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BakeHub - My Profile</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">BAKE<span class="hub-text">Hub</span></div>
+        <nav>
+            <ul>
+                <li><a href="_Home.html">Home</a></li>
+                <li><a href="Order.html">Order</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+             <a href="_Home.html" style="text-decoration:none; color:black; font-weight:bold;">
+                <i class="fas fa-arrow-left"></i> Back to Home
+             </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            
+            <div class="profile-header-section">
+                <div class="profile-pic-wrapper">
+                    <img src="Images/C Profile.jpg" alt="Profile"id="profile-pic">
+                </div>
+                <h2 id="display-name">Loading...</h2>
+                <p id="join-date">Member since 2025</p>
+                <button id="edit-btn" class="action-btn edit"><i class="fas fa-pen"></i> Edit Profile</button>
+            </div>
+
+            <form id="profile-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" name="name" disabled required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Add phone number" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" disabled style="background-color: #e9ecef; cursor: not-allowed;">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select id="gender" name="gender" disabled>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Birthday</label>
+                        <input type="date" id="birthday" name="birthday" disabled>
+                    </div>
+                </div>
+
+                <div class="edit-actions" id="edit-actions" style="display: none;">
+                    <button type="button" id="cancel-btn" class="action-btn cancel">Cancel</button>
+                    <button type="submit" id="save-btn" class="action-btn save">Save Changes</button>
+                </div>
+            </form>
+
+            <hr class="divider">
+
+            <div class="account-actions">
+                <button id="logout-btn" class="action-btn logout">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+                <button id="delete-btn" class="action-btn delete">
+                    Delete Account
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="Profile.js"></script>
+</body>
+</html>

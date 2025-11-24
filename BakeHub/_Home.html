@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeHub - Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">BAKE<span class="hub-text">Hub</span></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="cart-link-li">
+                    <a href="#" id="cart-link">
+                        Cart
+                        <span id="cart-count">0</span> </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="Profile.html" class="my-account-btn">
+            <span class="account-icon"></span> My Account
+        </a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-logo-container">
+                    <div class="logo">BAKE<span class="hub-text">Hub</span></div>
+                </div>
+                <p>Celebrating Homemade Goodness</p>
+            </div>
+            <div class="hero-image">
+                <img src="Images/Hero Cake.png" alt="Bundt Cake"> </div>
+        </section>
+
+        <section class="categories">
+            <div class="category-item" data-filter="all">
+                <div class="category-image-container">
+                    <img src="Images/All.png" alt="All Products"> </div>
+                <p>All</p>
+            </div>
+            <div class="category-item" data-filter="cake">
+                <div class="category-image-container">
+                    <img src="Images/Cake Cat.png" alt="Cakes"> </div>
+                <p>Cakes</p>
+            </div>
+            <div class="category-item" data-filter="cookie">
+                <div class="category-image-container">
+                    <img src="Images/Cookie Cat.png" alt="Cookies"> </div>
+                <p>Cookies</p>
+            </div>
+            <div class="category-item" data-filter="pastry">
+                <div class="category-image-container">
+                    <img src="Images/Pastry Cat.png" alt="Pastries"> </div>
+                <p>Pastries</p>
+            </div>
+            <div class="category-item" data-filter="viennesories">
+                <div class="category-image-container">
+                    <img src="Images/Vien Cat.png" alt="Viennoiseries"> </div>
+                <p>Viennoiseries</p>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured</h2>
+            <div class="product-grid">
+                
+                <div class="product-card" data-category="cake">
+                    <img src="Images/Black Forest.png" alt="Black Forest Cake"> <h3>Black Forest Cake</h3>
+                    <p class="price">₹300</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card" data-category="cookie">
+                    <img src="Images/Chocolate Cookies.png" alt="Choco Chip Cookie"> <h3>Classic Choco Chip Cookie</h3>
+                    <p class="price">₹150</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card" data-category="pastry">
+                    <img src="Images/Donut.png" alt="Strawberry Glazed Donut"> <h3>Strawberry Glazed Donut</h3>
+                    <p class="price">₹160</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card" data-category="viennesories">
+                    <img src="Images/Croissant.png" alt="Croissant"> <h3>Croissant</h3>
+                    <p class="price">₹150</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card" data-category="cake">
+                    <img src="Images/Mini Cup Cake.png" alt="Cup Cakes"> <h3>Cup Cakes</h3>
+                    <p class="price">₹120</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card" data-category="cake">
+                    <img src="Images/Red Velvet.png" alt="Red Velvet Cake"> <h3>Red Velvet Cake</h3>
+                    <p class="price">₹350</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card" data-category="cake">
+                    <img src="Images/Lemon Cake.png" alt="Lemon Cake"> <h3>Lemon Cake</h3>
+                    <p class="price">₹150</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card" data-category="cake">
+                    <img src="Images/Rainbow Cake.png" alt="Rainbow Cake"> <h3>Rainbow Cake</h3>
+                    <p class="price">₹500</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="cookie" style="display: none;">
+                    <img src="Images/double cookies.jpg" alt="Double Chocolate Chunk Cookie"> <h3>Double Chocolate Chunk Cookie</h3>
+                    <p class="price">₹160</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="cookie" style="display: none;">
+                    <img src="Images/Red-Velvet-Cookies.png" alt="Red Velvet Cookie"> <h3>Red Velvet Cookie</h3>
+                    <p class="price">₹170</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="cookie" style="display: none;">
+                    <img src="Images/Butter Shortbread.jpg" alt="Butter Shortbread"> <h3>Butter Shortbread</h3>
+                    <p class="price">₹120</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="cookie" style="display: none;">
+                    <img src="Images/Peanut-Butter-Cookies.png" alt="Peanut Butter Cookie"> <h3>Peanut Butter Cookie</h3>
+                    <p class="price">₹140</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="pastry" style="display: none;">
+                    <img src="Images/fruit-tarts.jpg" alt="Fresh Fruit Tart"> <h3>Fresh Fruit Tart</h3>
+                    <p class="price">₹180</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="pastry" style="display: none;">
+                    <img src="Images/Blueberry-Cheesecake.jpg" alt="Blueberry Cheesecake Slice"> <h3>Blueberry Cheesecake Slice</h3>
+                    <p class="price">₹220</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="pastry" style="display: none;">
+                    <img src="Images/Truffle_Pastry.png" alt="Chocolate Truffle Pastry"> <h3>Chocolate Truffle Pastry</h3>
+                    <p class="price">₹150</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="viennesories" style="display: none;">
+                    <img src="Images/pain-au-chocolat.jpg" alt="Pain au Chocolat"> <h3>Pain au Chocolat</h3>
+                    <p class="price">₹170</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="viennesories" style="display: none;">
+                    <img src="Images/Almond croissant.jpg" alt="Almond Croissant"> <h3>Almond Croissant</h3>
+                    <p class="price">₹180</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="viennesories" style="display: none;">
+                    <img src="Images/Cinnamon-Rolls.jpg" alt="Cinnamon Roll"> <h3>Cinnamon Roll</h3>
+                    <p class="price">₹150</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+                <div class="product-card non-featured" data-category="viennesories" style="display: none;">
+                    <img src="Images/pain aux raisins.jpg" alt="Pain aux Raisins"> <h3>Pain aux Raisins</h3>
+                    <p class="price">₹150</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Cart Side Bar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <i class="fas fa-times" id="close-cart"></i>
+        </div>
+        
+        <div class="cart-items" id="cart-items-container">
+            </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total:</strong>
+                <span id="cart-total">₹0.00</span>
+            </div>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+    </div>
+
+    <div class="order-popup-overlay" id="orderOverlay">
+        <div class="order-popup">
+            <i class="fas fa-times close-popup" id="closePopupBtn"></i>
+            
+            <img src="Images/Success Cake.jpg" alt="Success" class="popup-image">
+            
+            <h3>Your order has been placed</h3>
+            <p>Freshness in progress! We are boxing up your treats. Please listen for your name.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo">BAKE<span class="hub-text">Hub</span></div>
+            </div>
+
+            <div class="footer-office">
+                <h4>Office</h4>
+                <p>
+                    123 Green Park Lane,<br>
+                    Sector 7, New Delhi,<br>
+                    India – 110017
+                </p>
+                <p>bakehub@gmail.com</p>
+                <p>+91-2277906161</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-socials">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><img src="Images/insta.png"></a>
+                        <a href="https://x.com/"><img src="Images/X.png"></a>
+                        <a href="https://www.facebook.com/"><img src="Images/facebook.png"></a>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <h4><a href="#">About Us</a></h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="Home.js"></script>
+</body>
+</html>
