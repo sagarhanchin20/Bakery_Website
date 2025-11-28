@@ -29,7 +29,7 @@ This project was built as a part of my Web Technology Lab project using HTML, CS
 * **Database Configuration:** Start MySQL in XAMPP control panel and open phpMyAdmin (http://localhost/phpmyadmin) in your web browser
 * Create a new database named bakehub
 * Create table customer and order (SQL query has been provided in text file)
-* **Run the project:** Open XAMPP control panel and start start Aache, click on admin to go to your directory, and open Login.html
+* **Run the project:** Open XAMPP control panel and start start Apache, click on admin to go to your directory, and open Login.html
 
 ## 📸 Screenhots
 **Signin Page**
